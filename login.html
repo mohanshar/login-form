@@ -1,0 +1,169 @@
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width-device,initial-scale=1.0,user-scalable=no">
+<title>LogIn form </title>
+
+<style>
+
+html {
+box-sizing: border-box;
+}
+
+body {
+background-color: #fff;
+ color: #111;
+font-family: candara;
+user-select: none;  
+  transition: 1s;
+}
+
+.darklight {
+  background-color: #111;
+  color: #fff;  
+  transition: 1s;
+}
+
+.btn {
+background-color: #fff;
+ color: #111;
+}
+
+div button {
+background-color: #111;
+color: #fff;
+padding: 10px 15px;
+border: none;
+outline: none;
+font-weight: bold;
+border-radius: 3px;
+font-size: 15px;
+}
+
+h1 {
+ padding: 5px;
+font-family: cooper;
+ text-align: center;
+margin-top: 20px;
+}
+
+section {
+text-align: center;
+margin-top: 35px;
+font-family: sans-serif;
+}
+
+section input[type=text],input[type=password], select { 	
+padding: 12px 20px;
+	border: none;
+	font-size: 18px;
+	margin: 4px 0;
+box-sizing: border-box;
+display: inline-block;
+ border-radius: 50px;
+}
+
+section input[type=text]:focus, input[type=password]:focus {
+	background-color: #fff;
+	color: #111;
+	outline: 1px solid dodgerblue;
+}
+
+section input::placeholder {
+	color: #666;
+	font-size: 15px;
+}
+
+section input::placeholder::hover {
+ color: #111;
+}
+
+section input[type=submit].login {
+	background-color: royalblue;
+	color: white;
+ width: 60%;
+ display: inline-block;
+	padding: 10px 12px;
+	border: none;
+	outline: none;
+ font-size: 16px;
+ border-radius: 8px;
+}
+
+section input[type=button].ac {
+	background-color: royalblue;
+	color: white;
+ width: 50%;
+ display: inline-block;
+	padding: 10px 12px;
+	border: none;
+	outline: none;
+ font-size: 16px;
+ border-radius: 8px;
+}
+
+section input[type=button]:active {
+	background-color: slateblue;
+}
+
+section a {
+color: dodgerblue;
+font-size: 14px;
+}
+</style>
+
+<script>
+  function darklight() {
+var element = document.body;
+element.classList.toggle("darklight");
+
+  var x = document.getElementById("btn");
+
+if(x.innerHTML === 'Dark') {
+   x.innerHTML = 'Light';
+}
+else {
+   x.innerHTML = 'Dark';
+}
+
+}
+
+function btnBg(x) {
+  x.classList.toggle("btn");
+}
+</script>
+
+</head>
+<body>
+
+<div>
+<button onclick="darklight();btnBg(this);" id="btn">Dark</button>
+</div>
+
+<h1>
+Literature
+</h1>
+
+<section>
+
+<h3>Welcome to the LogIn form!</h3>
+
+<form method="POST" action="login.php">
+
+<input type="text" name="username" placeholder="Username" id="username" required/> 
+<br><br>
+<input type="password" name="password" placeholder="Password" id="password" required/>
+<br><br>
+<input type="submit" name="submit" value="Log In" class="login"/>
+<br><br>
+<a href="" title="forgot password?">Forgot Password?</a>
+<br><br>
+<a href="signup.html"><input type="button" value="Create New Account" class="ac"/></a>
+
+</form>
+
+</section>
+
+</body>
+</html>
+

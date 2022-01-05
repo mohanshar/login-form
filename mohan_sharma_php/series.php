@@ -1,0 +1,9 @@
+<html>
+<body>
+<?php
+$n=13;
+for($I=1;$I<=$n;$I=$I+2)
+echo"$I<br/>";
+?>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<html>
+<body>
+<?php
+$n=4;
+$f=1;
+for($I=1;$I<=$n;$I++)
+{
+	$f=$f*$I;
+}
+echo$f;
+	?>
+</body>
+</html>

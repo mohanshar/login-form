@@ -1,0 +1,11 @@
+<html>
+<body>
+<?php
+$l=5;
+$b=6;
+$h=4;
+$volume=$l*$b*$h;
+echo$volume;
+?>
+</body>
+</html>

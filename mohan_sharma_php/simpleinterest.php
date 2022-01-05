@@ -1,0 +1,11 @@
+<html>
+<body>
+<?php
+$P=1000;
+$T=2;
+$R=2;
+$I=($P*$T*$R)/100;
+echo$I;
+?>
+</body>
+</html>
